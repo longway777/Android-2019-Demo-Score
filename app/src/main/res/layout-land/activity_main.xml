@@ -82,7 +82,7 @@
             android:textSize="@dimen/teamTextSize"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline10"
             app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
         <TextView
@@ -96,7 +96,7 @@
             android:text="@string/textview2"
             android:textSize="@dimen/teamTextSize"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline9"
             app:layout_constraintStart_toStartOf="@+id/guideline"
             app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
@@ -108,12 +108,12 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            android:text="@{String.valueOf(data.getaTeamScore())}"
+            android:text="@{String.valueOf(safeUnbox(data.getaTeamScore()))}"
             android:textColor="@color/colorAccent"
             android:textSize="@dimen/scoreTextSize"
             app:layout_constraintBottom_toTopOf="@+id/guideline5"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline10"
             app:layout_constraintTop_toTopOf="@+id/guideline3"
             tools:text="120" />
 
@@ -125,11 +125,11 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            android:text="@{String.valueOf(data.getbTeamScore())}"
+            android:text="@{String.valueOf(safeUnbox(data.getbTeamScore()))}"
             android:textColor="@color/colorPrimary"
             android:textSize="@dimen/scoreTextSize"
             app:layout_constraintBottom_toTopOf="@+id/guideline5"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline9"
             app:layout_constraintStart_toStartOf="@+id/guideline"
             app:layout_constraintTop_toTopOf="@+id/guideline3"
             tools:text="50" />
