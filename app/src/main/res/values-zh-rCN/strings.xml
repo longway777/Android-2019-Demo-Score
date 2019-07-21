@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">记分</string>
+    <string name="resetButton">重置</string>
+    <string name="textview1">A 队</string>
+    <string name="textview2">B 队</string>
+    <string name="undoButton">撤销</string>
+</resources>
